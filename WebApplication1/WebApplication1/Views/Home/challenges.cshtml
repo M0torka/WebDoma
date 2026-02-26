@@ -1,106 +1,76 @@
 @{
-    ViewData["Title"] = "challenges";
+    ViewData["Title"] = "Top Challenges";
 }
 
-<!-- SOUBOR: challenges.html -->
-<!DOCTYPE html>
-<html lang="cs">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Epic Eats - Top Challenges</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <div class="logo">🍔 Epic Eats</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Domů</a></li>
-                <li><a href="challenges.html" class="active">Top Challenges</a></li>
-                <li><a href="o-mne.html">O mně</a></li>
-                <li><a href="recenze.html">Recenze</a></li>
+<section class="page-header">
+    <h1>Nejlepší Food Challenges</h1>
+    <p>Výběr těch nejšílenějších a nejzábavnějších výzev z celého světa</p>
+</section>
+
+<section class="challenges-list">
+    <article class="challenge-card">
+        <div class="challenge-img">
+            <img src="~/images/spicy-challenge.jpg" alt="Spicy Challenge">
+        </div>
+        <div class="challenge-content">
+            <h2>🌶️ Ultra Spicy Challenge</h2>
+            <p><strong>Obtížnost:</strong> Extrémní</p>
+            <p>Soutěžící musí sníst sérii pokrmů s postupně se zvyšující pálivostí. Od jalapeños až po Carolina Reaper - nejpálivější papričku světa.</p>
+            <ul>
+                <li>Časový limit: 30 minut</li>
+                <li>Žádné nápoje po dobu 5 minut</li>
+                <li>Úspěšnost: pouze 15%</li>
             </ul>
-        </nav>
-    </header>
+        </div>
+    </article>
 
-    <main>
-        <section class="page-header">
-            <h1>Nejlepší Food Challenges</h1>
-            <p>Výběr těch nejšílenějších a nejzábavnějších výzev z celého světa</p>
-        </section>
+    <article class="challenge-card">
+        <div class="challenge-img">
+            <img src="~/images/pizza-challenge.jpg" alt="Pizza Challenge">
+        </div>
+        <div class="challenge-content">
+            <h2>🍕 XXL Pizza Challenge</h2>
+            <p><strong>Obtížnost:</strong> Vysoká</p>
+            <p>Obří pizza o průměru 50 cm! Musíte ji sníst sami během 60 minut. Většina lidí vzdá po polovině.</p>
+            <ul>
+                <li>Váha: přibližně 3 kg</li>
+                <li>Časový limit: 1 hodina</li>
+                <li>Rekord: 42 minut</li>
+            </ul>
+        </div>
+    </article>
 
-        <section class="challenges-list">
-            <article class="challenge-card">
-                <div class="challenge-img">
-                    <img src="images/spicy-challenge.jpg" alt="Spicy Challenge">
-                </div>
-                <div class="challenge-content">
-                    <h2>🌶️ Ultra Spicy Challenge</h2>
-                    <p><strong>Obtížnost:</strong> Extrémní</p>
-                    <p>Soutěžící musí sníst sérii pokrmů s postupně se zvyšující pálivostí. Od jalapeños až po Carolina Reaper - nejpálivější papričku světa.</p>
-                    <ul>
-                        <li>Časový limit: 30 minut</li>
-                        <li>Žádné nápoje po dobu 5 minut</li>
-                        <li>Úspěšnost: pouze 15%</li>
-                    </ul>
-                </div>
-            </article>
+    <article class="challenge-card">
+        <div class="challenge-img">
+            <img src="~/images/ramen-challenge.jpg" alt="Ramen Challenge">
+        </div>
+        <div class="challenge-content">
+            <h2>🍜 10kg Ramen Challenge</h2>
+            <p><strong>Obtížnost:</strong> Střední</p>
+            <p>Obří mísa ramen polévky s masem, vejci a zeleninou. Populární výzva v Japonsku a Koreji.</p>
+            <ul>
+                <li>Objem: 5 litrů polévky</li>
+                <li>Časový limit: 45 minut</li>
+                <li>Nejoblíbenější v Asii</li>
+            </ul>
+        </div>
+    </article>
+</section>
 
-            <article class="challenge-card">
-                <div class="challenge-img">
-                    <img src="images/pizza-challenge.jpg" alt="Pizza Challenge">
-                </div>
-                <div class="challenge-content">
-                    <h2>🍕 XXL Pizza Challenge</h2>
-                    <p><strong>Obtížnost:</strong> Vysoká</p>
-                    <p>Obří pizza o průměru 50 cm! Musíte ji sníst sami během 60 minut. Většina lidí vzdá po polovině.</p>
-                    <ul>
-                        <li>Váha: přibližně 3 kg</li>
-                        <li>Časový limit: 1 hodina</li>
-                        <li>Rekord: 42 minut</li>
-                    </ul>
-                </div>
-            </article>
-
-            <article class="challenge-card">
-                <div class="challenge-img">
-                    <img src="images/ramen-challenge.jpg" alt="Ramen Challenge">
-                </div>
-                <div class="challenge-content">
-                    <h2>🍜 10kg Ramen Challenge</h2>
-                    <p><strong>Obtížnost:</strong> Střední</p>
-                    <p>Obří mísa ramen polévky s masem, vejci a zeleninou. Populární výzva v Japonsku a Koreji.</p>
-                    <ul>
-                        <li>Objem: 5 litrů polévky</li>
-                        <li>Časový limit: 45 minut</li>
-                        <li>Nejoblíbenější v Asii</li>
-                    </ul>
-                </div>
-            </article>
-        </section>
-
-        <section class="tips">
-            <h2>Tipy pro Sledování</h2>
-            <div class="tips-grid">
-                <div class="tip-box">
-                    <h3>📱 Nejlepší Kanály</h3>
-                    <p>Matt Stonie, Competitive Eating, a korejští mukbang youtubeři jako Banzz</p>
-                </div>
-                <div class="tip-box">
-                    <h3>⏰ Kdy Sledovat</h3>
-                    <p>Mukbang videa jsou nejlepší u večeře - ale pozor, můžete dostat hlad!</p>
-                </div>
-                <div class="tip-box">
-                    <h3>🎬 Co Hledat</h3>
-                    <p>Autentické reakce, zajímavé jídlo a charismatické osobnosti</p>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Epic Eats | Autor: Honza H.</p>
-    </footer>
-</body>
-</html>
+<section class="tips">
+    <h2>Tipy pro Sledování</h2>
+    <div class="tips-grid">
+        <div class="tip-box">
+            <h3>📱 Nejlepší Kanály</h3>
+            <p>Matt Stonie, Competitive Eating, a korejští mukbang youtubeři jako Banzz</p>
+        </div>
+        <div class="tip-box">
+            <h3>⏰ Kdy Sledovat</h3>
+            <p>Mukbang videa jsou nejlepší u večeře - ale pozor, můžete dostat hlad!</p>
+        </div>
+        <div class="tip-box">
+            <h3>🎬 Co Hledat</h3>
+            <p>Autentické reakce, zajímavé jídlo a charismatické osobnosti</p>
+        </div>
+    </div>
+</section>

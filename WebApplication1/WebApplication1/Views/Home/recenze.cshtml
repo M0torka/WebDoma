@@ -1,89 +1,60 @@
 @{
-    ViewData["Title"] = "recenze";
+    ViewData["Title"] = "Recenze";
 }
 
-<!DOCTYPE html>
-<html lang="cs">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Epic Eats - Recenze</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <div class="logo">🍔 Epic Eats</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Domů</a></li>
-                <li><a href="challenges.html">Top Challenges</a></li>
-                <li><a href="o-mne.html">O mně</a></li>
-                <li><a href="recenze.html" class="active">Recenze</a></li>
-            </ul>
-        </nav>
-    </header>
+<section class="page-header">
+    <h1>Recenze našich zákazníků</h1>
+    <p>Přečtěte si, co říkají lidé, kteří vyzkoušeli mukbang challenges</p>
+</section>
 
-    <main>
-        <section class="page-header">
-            <h1>Recenze našich zákazníků</h1>
-            <p>Přečtěte si, co říkají lidé, kteří vyzkoušeli mukbang challenges</p>
-        </section>
+<section class="reviews-container">
+    <article class="review-box">
+        <div class="review-content">
+            <h3>Petr Novák</h3>
+            <p>Účast v mukbang challenge byla neuvěřitelný zážitek! Nikdy jsem si nemyslel, že dokážu sníst tolik jídla najednou. Atmosféra byla skvělá a ostatní účastníci mě motivovali. Rozhodně to zkusím znovu, příště si dám větší výzvu!</p>
+        </div>
+        <div class="review-rating">
+            <span class="rating-number">9.5/10</span>
+        </div>
+    </article>
 
-        <section class="reviews-container">
-            <article class="review-box">
-                <div class="review-content">
-                    <h3>Petr Novák</h3>
-                    <p>Účast v mukbang challenge byla neuvěřitelný zážitek! Nikdy jsem si nemyslel, že dokážu sníst tolik jídla najednou. Atmosféra byla skvělá a ostatní účastníci mě motivovali. Rozhodně to zkusím znovu, příště si dám větší výzvu!</p>
-                </div>
-                <div class="review-rating">
-                    <span class="rating-number">9.5/10</span>
-                </div>
-            </article>
+    <article class="review-box">
+        <div class="review-content">
+            <h3>Jana Svobodová</h3>
+            <p>Zúčastnila jsem se seafood mukbangu a bylo to úžasné! Čerstvé krevety a humr byly luxusní. Trochu jsem se bála, jestli to zvládnu, ale nakonec jsem překvapila sama sebe. Organizace byla perfektní a personál velmi milý.</p>
+        </div>
+        <div class="review-rating">
+            <span class="rating-number">8/10</span>
+        </div>
+    </article>
 
-            <article class="review-box">
-                <div class="review-content">
-                    <h3>Jana Svobodová</h3>
-                    <p>Zúčastnila jsem se seafood mukbangu a bylo to úžasné! Čerstvé krevety a humr byly luxusní. Trochu jsem se bála, jestli to zvládnu, ale nakonec jsem překvapila sama sebe. Organizace byla perfektní a personál velmi milý.</p>
-                </div>
-                <div class="review-rating">
-                    <span class="rating-number">8/10</span>
-                </div>
-            </article>
+    <article class="review-box">
+        <div class="review-content">
+            <h3>Martin Dvořák</h3>
+            <p>Spicy noodle challenge byla brutální, ale skvělá! Pálivost byla opravdu extrémní a myslel jsem, že to nevydržím. Ale s podporou ostatních jsem to dokázal a cítím se jako vítěz. Nejlepší zážitek letošního roku, už se těším na další!</p>
+        </div>
+        <div class="review-rating">
+            <span class="rating-number">10/10</span>
+        </div>
+    </article>
 
-            <article class="review-box">
-                <div class="review-content">
-                    <h3>Martin Dvořák</h3>
-                    <p>Spicy noodle challenge byla brutální, ale skvělá! Pálivost byla opravdu extrémní a myslel jsem, že to nevydržím. Ale s podporou ostatních jsem to dokázal a cítím se jako vítěz. Nejlepší zážitek letošního roku, už se těším na další!</p>
-                </div>
-                <div class="review-rating">
-                    <span class="rating-number">10/10</span>
-                </div>
-            </article>
+    <article class="review-box">
+        <div class="review-content">
+            <h3>Lucie Procházková</h3>
+            <p>XXL burger challenge byla náročnější, než jsem čekala. Burger byl opravdu obrovský a po půlce jsem měla pocit, že to nevydržím. Nakonec jsem to nedokončila, ale zážitek to byl fantastický. Příště si dám menší porci!</p>
+        </div>
+        <div class="review-rating">
+            <span class="rating-number">7/10</span>
+        </div>
+    </article>
 
-            <article class="review-box">
-                <div class="review-content">
-                    <h3>Lucie Procházková</h3>
-                    <p>XXL burger challenge byla náročnější, než jsem čekala. Burger byl opravdu obrovský a po půlce jsem měla pocit, že to nevydržím. Nakonec jsem to nedokončila, ale zážitek to byl fantastický. Příště si dám menší porci!</p>
-                </div>
-                <div class="review-rating">
-                    <span class="rating-number">7/10</span>
-                </div>
-            </article>
-
-            <article class="review-box">
-                <div class="review-content">
-                    <h3>Tomáš Veselý</h3>
-                    <p>Ramen mukbang překonal všechna má očekávání! Polévka byla chutná a porce skutečně masivní. Atmosféra byla uvolněná a bavil jsem se skvěle. Dokonce jsem to zvládnul jako jeden z prvních a dostal speciální cenu. Vrátím se určitě!</p>
-                </div>
-                <div class="review-rating">
-                    <span class="rating-number">9/10</span>
-                </div>
-            </article>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Epic Eats | Autor: Honza H.</p>
-    </footer>
-</body>
-</html>
+    <article class="review-box">
+        <div class="review-content">
+            <h3>Tomáš Veselý</h3>
+            <p>Ramen mukbang překonal všechna má očekávání! Polévka byla chutná a porce skutečně masivní. Atmosféra byla uvolněná a bavil jsem se skvěle. Dokonce jsem to zvládnul jako jeden z prvních a dostal speciální cenu. Vrátím se určitě!</p>
+        </div>
+        <div class="review-rating">
+            <span class="rating-number">9/10</span>
+        </div>
+    </article>
+</section>
