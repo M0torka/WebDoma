@@ -8,14 +8,6 @@
 }
 else
 {
-    @if (TempData["SuccessMessage"] != null)
-    {
-        <div class="alert alert-success alert-dismissible fade show" role="alert">
-            <strong>@TempData["SuccessMessage"]</strong>
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>
-    }
-
     <section class="page-header">
         <h1>👤 Můj účet</h1>
         <p class="subtitle">Vítej zpět, @User.Identity.Name!</p>
