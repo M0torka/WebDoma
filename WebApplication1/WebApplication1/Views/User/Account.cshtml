@@ -1,0 +1,17 @@
+@{
+    ViewData["Title"] = "Můj účet";
+    var username = Context.Session.GetString("username");
+}
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="alert alert-success" role="alert">
+                <h2>Ahoj, @username!</h2>
+                <p>Jste úspěšně přihlášeni.</p>
+            </div>
+            <a href="/User/Index" class="btn btn-primary">Přejít na účet</a>
+            <a href="/" class="btn btn-secondary">Zpět na domů</a>
+        </div>
+    </div>
+</div>
