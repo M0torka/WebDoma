@@ -2,7 +2,12 @@
     ViewData["Title"] = "Účet";
 }
 
-@if (User.Identity == null || !User.Identity.IsAuthenticated)
+@{
+    var isAuthenticated = Context.Session.GetString("isAuthenticated");
+    var username = Context.Session.GetString("username");
+}
+
+@if (string.IsNullOrEmpty(isAuthenticated) || isAuthenticated != "true")
 {
     <script>window.location.href = "/User/Register";</script>
 }
@@ -10,7 +15,7 @@ else
 {
     <section class="page-header">
         <h1>👤 Můj účet</h1>
-        <p class="subtitle">Vítej zpět, @User.Identity.Name!</p>
+        <p class="subtitle">Vítej zpět, @username!</p>
     </section>
 
     <section class="account-lobby">

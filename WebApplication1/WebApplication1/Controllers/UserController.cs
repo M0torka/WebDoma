@@ -13,6 +13,11 @@ namespace WebApplication1.Controllers
             _context = context;
         }
 
+        public IActionResult Index()
+        {
+            return View();
+        }
+
         [HttpPost("/api/user/register")]
         public async Task<IActionResult> RegisterUser([FromBody] RegisterRequest request)
         {
