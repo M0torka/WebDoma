@@ -1,5 +1,19 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿@model WebApplication1.Models.Note
+
+<h2>Přidat poznámku</h2>
+
+<form asp-action="Add" method="post">
+    <div>
+        <label asp-for="Title">Název</label>
+        <input asp-for="Title" />
+        <span asp-validation-for="Title"></span>
+    </div>
+    <div>
+        <label asp-for="Content">Text</label>
+        <textarea asp-for="Content"></textarea>
+        <span asp-validation-for="Content"></span>
+    </div>
+    <button type="submit">Uložit</button>
+</form>
+
+<a asp-action="List">← Zpět na seznam</a>

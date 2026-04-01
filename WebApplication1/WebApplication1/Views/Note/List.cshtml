@@ -1,5 +1,20 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@model List<WebApplication1.Models.Note>
+
+<h2>Moje poznámky</h2>
+<a asp-action="Add">+ Přidat poznámku</a>
+
+@if (!Model.Any())
+{
+    <p>Zatím žádné poznámky.</p>
+}
+else
+{
+    foreach (var note in Model)
+    {
+        <div>
+            <h3>@note.Title</h3>
+            <p>@note.Content</p>
+            <small>@note.CreatedAt.ToString("dd.MM.yyyy HH:mm")</small>
+        </div>
+    }
 }
