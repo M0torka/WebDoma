@@ -1,12 +1,10 @@
 @{
     ViewData["Title"] = "Účet";
 }
-
 @{
     var isAuthenticated = Context.Session.GetString("isAuthenticated");
     var username = Context.Session.GetString("username");
 }
-
 @if (string.IsNullOrEmpty(isAuthenticated) || isAuthenticated != "true")
 {
     <script>window.location.href = "/User/Register";</script>
@@ -17,31 +15,20 @@ else
         <h1>👤 Můj účet</h1>
         <p class="subtitle">Vítej zpět, @username!</p>
     </section>
-
     <section class="account-lobby">
-        <a class="account-card disabled" href="#">
-            <div class="account-card-icon">⚙️</div>
+        <a class="account-card" href="/Note/Add">
+            <div class="account-card-icon">📝</div>
             <div class="account-card-body">
-                <h3>Nastavení</h3>
-                <p>Upravit profil, heslo a předvolby účtu</p>
+                <h3>Přidat poznámku</h3>
+                <p>Vytvoř a ulož novou textovou poznámku</p>
             </div>
             <div class="account-card-arrow">›</div>
         </a>
-
-        <a class="account-card disabled" href="#">
-            <div class="account-card-icon">📋</div>
+        <a class="account-card" href="/Note/List">
+            <div class="account-card-icon">🗒️</div>
             <div class="account-card-body">
-                <h3>Historie</h3>
-                <p>Přehled navštívených výzev a mukbang videí</p>
-            </div>
-            <div class="account-card-arrow">›</div>
-        </a>
-
-        <a class="account-card disabled" href="#">
-            <div class="account-card-icon">💬</div>
-            <div class="account-card-body">
-                <h3>Komentáře</h3>
-                <p>Všechny tvoje komentáře na jednom místě</p>
+                <h3>Moje poznámky</h3>
+                <p>Zobraz všechny své uložené poznámky</p>
             </div>
             <div class="account-card-arrow">›</div>
         </a>
